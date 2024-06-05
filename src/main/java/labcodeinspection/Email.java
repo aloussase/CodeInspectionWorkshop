@@ -3,10 +3,10 @@ package labcodeinspection;
 public class Email {
 
 	private String m_firstName; //NOPMD This field will be manipulated later
-	private String m_lastName;
-	private String password = null;
+	final private String m_lastName;
+	private String password; // NOPMD This field is assigned later in generateEmail
 	private String department;
-	private int defaultpasswordLength = 8;
+	final private int defaultpasswordLength = 8;
 	private String email;
 
 	public Email(String firstName, String lastName) {
